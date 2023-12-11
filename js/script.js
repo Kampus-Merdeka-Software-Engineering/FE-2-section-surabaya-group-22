@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://be-2-surabaya-22-production.up.railway.app';
 
 async function fetchMenu() {
     const menuList = document.getElementById('item-menu')
@@ -9,69 +9,11 @@ async function fetchMenu() {
 
         const menuListElement = menu.map((item) => {
             return `
-            <section id="menu">
-            <div class="layar-dalam">
-              <h3>Menu</h3>
-              <p class="ringkasan">
-                Cake is the sweetiest life of pradise!
-              </p>
-                <div class="tim">
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
+                <div>    
+                    <img loading="lazy" src='${item.cakeImg}'/>
+                    <h6>${item.cakeName}<h6>
+                    <span>Rp. ${item.price}<span>
                 </div>
-            <br>
-                <div class="tim">
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                </div>
-            <br>
-                <div class="tim">
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                        <div>    
-                            <img loading="lazy" src='${item.cakeImg}'/>
-                            <h6>${item.cakeName}<h6>
-                            <span>Rp. ${item.price}<span>
-                        </div>
-                </div>
-            </div>
-          </section>
-            
-
             `;
         });
 
